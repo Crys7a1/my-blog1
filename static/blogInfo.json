@@ -1,0 +1,19 @@
+{
+    "blogInfo|4": [
+        {
+            "id|+1": 1,
+            "blog|1": [
+                "Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式",
+                "Vue一般使用template来创建HTML，如果我们需要使用javascript来创建html，这时候我们需要使用render函数。",
+                "插槽就是vue实现的一套内容分发的API，将插槽元素作为承载分发内容的出口",
+                "Vue的自定义指令可以通过钩子函数bind实现初始化设置。",
+                "可以在组件中使用计算属性来保存state中的数据"
+            ],
+            "string|1-10": "★",
+
+            "time": "@date(2022-MM-dd hh:mm:ss)",
+
+            "type|1": ["javascript", "webpack", "mongoDB", "Node"]
+        }
+    ]
+}
