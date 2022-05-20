@@ -128,7 +128,7 @@ const goodsinfos = {
       price: "前端学习",
       plusprice: "社区",
       imgsrc: "static/mdn.png",
-      linkhref: "https://www.baidu.com"
+      linkhref: "https://developer.mozilla.org/zh-CN/"
     },
     {
       id: "StackOverflow",
@@ -147,7 +147,7 @@ const goodsinfos = {
       price: "前端学习",
       plusprice: "综合",
       imgsrc: "static/runoob.jpeg",
-      linkhref: "https://www.baidu.com"
+      linkhref: "https://www.runoob.com/"
     },
     {
       id: "JavaScriptInfo",
@@ -156,7 +156,7 @@ const goodsinfos = {
       price: "前端学习",
       plusprice: "书籍",
       imgsrc: "static/javascriptInfo.png",
-      linkhref: "https://www.baidu.com"
+      linkhref: "https://zh.javascript.info/"
     },
     {
       id: "Can I Use",
@@ -164,7 +164,7 @@ const goodsinfos = {
       price: "开发工具",
       plusprice: "兼容性",
       imgsrc: "static/caniuse.png",
-      linkhref: "https://www.baidu.com"
+      linkhref: "https://caniuse.com/"
     }
   ]
 };

@@ -18,8 +18,14 @@
         <button type="button" class="icon" id="toggle" @click="toggle">
           <div class="line line1"></div>
           <div class="line line2"></div>
-        </button></nav
-    ></el-header>
+        </button>
+      </nav>
+      <div class="git">
+        <a href="https://github.com/Crys7a1" target="_blank"
+          ><img id="github" src="/static/github.png" alt=""
+        /></a>
+      </div>
+    </el-header>
   </div>
 </template>
 
@@ -77,6 +83,17 @@ a {
   width: 60px;
   height: 60px;
   float: left;
+}
+.git {
+  width: 60px;
+  height: 60px;
+  right: 10px;
+  margin-top: -25px;
+  float: right;
+}
+#github {
+  width: 30px;
+  height: 30px;
 }
 .coderName {
   color: #1098ad;
