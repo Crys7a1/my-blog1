@@ -13,15 +13,15 @@
     <section>
       <div class="tips">
         <div class="function">
-          <img class="tips-img" src="/static/1.svg" alt="" />
+          <img class="tips-img" src="static/1.svg" alt="" />
           <h3>技术博客</h3>
         </div>
         <div class="function">
-          <img class="tips-img" src="/static/1.svg" alt="" />
+          <img class="tips-img" src="static/1.svg" alt="" />
           <h3>安装教程</h3>
         </div>
         <div class="function">
-          <img class="tips-img" src="/static/1.svg" alt="" />
+          <img class="tips-img" src="static/1.svg" alt="" />
           <h3>资源分享</h3>
         </div>
       </div>
@@ -31,21 +31,21 @@
             青春是一个短暂的美梦, 当你醒来时, 它早已消失无踪
           </h4>
 
-          <img src="/static/2.jpg" alt="" />
+          <img src="static/2.jpg" alt="" />
         </div>
         <div class="about">
           <h4>
             头上一片晴天，心中一个想念
           </h4>
 
-          <img src="/static/4.jpg" alt="" />
+          <img src="static/4.jpg" alt="" />
         </div>
         <div class="about">
           <h4>
             少量的邪恶足以抵消全部高贵的品质, 害得人声名狼藉
           </h4>
 
-          <img src="/static/3.jpg" alt="" />
+          <img src="static/3.jpg" alt="" />
         </div>
       </div>
     </section>
@@ -66,10 +66,10 @@ export default {
       drawer: false,
       direction: "rtl",
       images: [
-        { url: require("../../static/5.jpg") },
-        { url: require("../../static/博客.jpg") },
-        { url: require("../../static/博客2.jpg") },
-        { url: require("../../static/官网博客.jpg") }
+        { url: require("../../public/5.jpg") },
+        { url: require("../../public/博客.jpg") },
+        { url: require("../../public/博客2.jpg") },
+        { url: require("../../public/官网博客.jpg") }
       ]
     };
   }

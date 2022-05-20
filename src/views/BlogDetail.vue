@@ -34,7 +34,7 @@
             <aside>
               <ul class="related">
                 <li class="related-post">
-                  <img src="/static/3.jpg" alt="Person programming" width="75" height="75" />
+                  <img src="static/3.jpg" alt="Person programming" width="75" height="75" />
                   <div>
                     <p>The Unknown Powers of CSS</p>
 
@@ -44,7 +44,7 @@
                   </div>
                 </li>
                 <li class="related-post">
-                  <img src="/static/3.jpg" alt="Lightning" width="75" height="75" />
+                  <img src="static/3.jpg" alt="Lightning" width="75" height="75" />
                   <div>
                     <p>The Unknown Powers of CSS</p>
 
@@ -54,7 +54,7 @@
                   </div>
                 </li>
                 <li class="related-post">
-                  <img src="/static/3.jpg" alt="JavaScript code on a screen" width="75" height="75" />
+                  <img src="static/3.jpg" alt="JavaScript code on a screen" width="75" height="75" />
                   <div>
                     <p>Why JavaScript is Awesome</p>
 
@@ -79,7 +79,7 @@
                 <p>
                   以下推荐国外比较稳定的两个 CDN，国内还没发现哪一家比较好，目前还是建议下载到本地。<br />
 
-                  Staticfile CDN（国内） : https://cdn.staticfile.org/vue/2.2.2/vue.min.js
+                  publicfile CDN（国内） : https://cdn.staticfile.org/vue/2.2.2/vue.min.js
                   <br />
 
                   unpkg：https://unpkg.com/vue@2.6.14/dist/vue.min.js

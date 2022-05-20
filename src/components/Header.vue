@@ -1,9 +1,9 @@
 <template>
   <div>
     <el-header>
-      <!-- <img class="img-head" src="/static/7.jpg" alt=""/> -->
+      <!-- <img class="img-head" src="static/7.jpg" alt=""/> -->
       <router-link :to="{ name: 'Login' }">
-        <img class="img-head" src="/static/7.jpg" alt="" />
+        <img class="img-head" src="static/7.jpg" alt="" />
         <b class="coderName">Coder-Cs</b>
       </router-link>
 
@@ -27,7 +27,7 @@
         </button>
       </nav>
       <div class="git">
-        <a href="https://github.com/Crys7a1" target="_blank"><img id="github" src="/static/github.png" alt=""/></a>
+        <a href="https://github.com/Crys7a1" target="_blank"><img id="github" src="static/github.png" alt=""/></a>
       </div>
     </el-header>
   </div>

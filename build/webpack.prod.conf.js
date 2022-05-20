@@ -53,9 +53,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     // Compress extracted CSS. We are using this plugin so that possible
     // duplicated CSS from different components can be deduped.
     new OptimizeCSSPlugin({
-      cssProcessorOptions: config.build.productionSourceMap
-        ? { safe: true, map: { inline: false } }
-        : { safe: true }
+      cssProcessorOptions: config.build.productionSourceMap ? { safe: true, map: { inline: false } } : { safe: true }
     }),
     // generate dist index.html with correct asset hash for caching.
     // you can customize output by editing /index.html
@@ -110,7 +108,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     // copy custom static assets
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, "../static"),
+        from: path.resolve(__dirname, "../public"),
         to: config.build.assetsSubDirectory,
         ignore: [".*"]
       }
@@ -125,9 +123,7 @@ if (config.build.productionGzip) {
     new CompressionWebpackPlugin({
       asset: "[path].gz[query]",
       algorithm: "gzip",
-      test: new RegExp(
-        "\\.(" + config.build.productionGzipExtensions.join("|") + ")$"
-      ),
+      test: new RegExp("\\.(" + config.build.productionGzipExtensions.join("|") + ")$"),
       threshold: 10240,
       minRatio: 0.8
     })
@@ -135,8 +131,7 @@ if (config.build.productionGzip) {
 }
 
 if (config.build.bundleAnalyzerReport) {
-  const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-    .BundleAnalyzerPlugin;
+  const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
   webpackConfig.plugins.push(new BundleAnalyzerPlugin());
 }
 

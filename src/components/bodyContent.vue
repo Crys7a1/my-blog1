@@ -5,12 +5,12 @@
         <h2>A website for recording and learning</h2>
 
         <div class="author-box">
-          <img src="/static/7.jpg" alt="Headshot of Laura Jones" class="author-img" />
+          <img src="static/7.jpg" alt="Headshot of Laura Jones" class="author-img" />
 
           <p id="author" class="author">Posted by <strong>Coder-Cs</strong> on Monday, June 24st 2022</p>
         </div>
 
-        <img src="/static/post-img.jpg" alt="HTML code on a screen" width="500" height="200" class="post-img" />
+        <img src="static/post-img.jpg" alt="HTML code on a screen" width="500" height="200" class="post-img" />
       </header>
     </article>
   </div>

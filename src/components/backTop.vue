@@ -1,6 +1,6 @@
 <template>
   <div class="bottom-to-top">
-    <a href="#"><img src="/static/回到顶部.png" alt=""/></a>
+    <a href="#"><img src="static/回到顶部.png" alt=""/></a>
   </div>
 </template>
 
