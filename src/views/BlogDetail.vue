@@ -8,11 +8,7 @@
         <el-tab-pane label="技术博客" name="first">
           <div class="block">
             <el-timeline v-for="(item, index) in articles" :key="index">
-              <el-timeline-item
-                :title="item.title"
-                timestamp="2018/4/12"
-                placement="left"
-              >
+              <el-timeline-item :title="item.title" timestamp="2018/4/12" placement="left">
                 <el-card>
                   <h3>{{ item.title }}</h3>
                   <p>{{ item.content }}</p>
@@ -33,23 +29,12 @@
             <el-input v-model="tag" placeholder="请输入类型"></el-input>
             <el-input v-model="time" placeholder="请输入发布日期"></el-input>
 
-            <el-input
-              type="textarea"
-              :rows="6"
-              placeholder="请输入文章内容"
-              v-model="content"
-            >
-            </el-input>
+            <el-input type="textarea" :rows="6" placeholder="请输入文章内容" v-model="content"> </el-input>
             <el-button type="primary" id="add" @click="add">录入</el-button>
             <aside>
               <ul class="related">
                 <li class="related-post">
-                  <img
-                    src="/static/3.jpg"
-                    alt="Person programming"
-                    width="75"
-                    height="75"
-                  />
+                  <img src="/static/3.jpg" alt="Person programming" width="75" height="75" />
                   <div>
                     <p>The Unknown Powers of CSS</p>
 
@@ -59,12 +44,7 @@
                   </div>
                 </li>
                 <li class="related-post">
-                  <img
-                    src="/static/3.jpg"
-                    alt="Lightning"
-                    width="75"
-                    height="75"
-                  />
+                  <img src="/static/3.jpg" alt="Lightning" width="75" height="75" />
                   <div>
                     <p>The Unknown Powers of CSS</p>
 
@@ -74,12 +54,7 @@
                   </div>
                 </li>
                 <li class="related-post">
-                  <img
-                    src="/static/3.jpg"
-                    alt="JavaScript code on a screen"
-                    width="75"
-                    height="75"
-                  />
+                  <img src="/static/3.jpg" alt="JavaScript code on a screen" width="75" height="75" />
                   <div>
                     <p>Why JavaScript is Awesome</p>
 
@@ -94,29 +69,23 @@
         <el-tab-pane label="安装教程" name="second"
           ><el-collapse accordion>
             <el-collapse-item>
-              <template slot="title">
-                -- Vue.js 安装--<i class="header-icon el-icon-info"></i>
-              </template>
+              <template slot="title"> -- Vue.js 安装--<i class="header-icon el-icon-info"></i> </template>
               <div>
                 <h3>独立版本</h3>
                 <p>
-                  我们可以在 Vue.js 的官网上直接下载 vue.min.js 并用 script
-                  标签引入。
+                  我们可以在 Vue.js 的官网上直接下载 vue.min.js 并用 script 标签引入。
                 </p>
                 <h3>使用 CDN 方法</h3>
                 <p>
-                  以下推荐国外比较稳定的两个
-                  CDN，国内还没发现哪一家比较好，目前还是建议下载到本地。<br />
+                  以下推荐国外比较稳定的两个 CDN，国内还没发现哪一家比较好，目前还是建议下载到本地。<br />
 
-                  Staticfile CDN（国内） :
-                  https://cdn.staticfile.org/vue/2.2.2/vue.min.js
+                  Staticfile CDN（国内） : https://cdn.staticfile.org/vue/2.2.2/vue.min.js
                   <br />
 
                   unpkg：https://unpkg.com/vue@2.6.14/dist/vue.min.js
                   <br />
 
-                  cdnjs :
-                  https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js
+                  cdnjs : https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js
                 </p>
                 <h3>NPM 方法</h3>
                 <p>
@@ -154,24 +123,21 @@
             <el-collapse-item title="--配置 MongoDB--">
               <h3>创建数据目录</h3>
               <p>
-                已经在 C 盘安装了 mongodb，现在让我们创建一个 data 的目录然后在
-                data 目录里创建 db 目录。<br />
+                已经在 C 盘安装了 mongodb，现在让我们创建一个 data 的目录然后在 data 目录里创建 db 目录。<br />
                 cd C:\<br />
                 md "\data\db"<br />
               </p>
 
               <h3>运行 MongoDB 服务器</h3>
               <p>
-                为了从命令提示符下运行 MongoDB 服务器，你必须从 MongoDB 目录的
-                bin 目录中执行 mongod.exe 文件。<br />
+                为了从命令提示符下运行 MongoDB 服务器，你必须从 MongoDB 目录的 bin 目录中执行 mongod.exe 文件。<br />
 
                 C:\mongodb\bin\mongod --dbpath c:\data\db<br />
               </p>
 
               <h3>连接MongoDB</h3>
               <p>
-                我们可以在命令窗口中运行 mongo.exe 命令即可连接上
-                MongoDB，执行如下命令：<br />
+                我们可以在命令窗口中运行 mongo.exe 命令即可连接上 MongoDB，执行如下命令：<br />
 
                 C:\mongodb\bin\mongo.exe<br />
               </p>
@@ -215,17 +181,16 @@
               <h3>使用</h3>
               <h3>1. 全局注册</h3>
               <p>
-                若想要在应用程序的任何位置使用本插件，请使用全局注册方法。在您的主应用程序文件中导入
-                Vue 和 Highcharts-Vue 扩展包<br />
+                若想要在应用程序的任何位置使用本插件，请使用全局注册方法。在您的主应用程序文件中导入 Vue 和
+                Highcharts-Vue 扩展包<br />
 
-                import Vue from 'vue' import HighchartsVue from 'highcharts-vue'
-                接下来，您可以将其注册为 Vue 对象中的插件：
-                Vue.use(HighchartsVue)
+                import Vue from 'vue' import HighchartsVue from 'highcharts-vue' 接下来，您可以将其注册为 Vue
+                对象中的插件： Vue.use(HighchartsVue)
               </p>
               <h3>1. 局部注册</h3>
               <p>
-                若仅用于特定组件，请使用局部注册方法。首先，您应该从组件文件中的
-                Highcharts-Vue 包中导入 Chart 组件对象：<br />
+                若仅用于特定组件，请使用局部注册方法。首先，您应该从组件文件中的 Highcharts-Vue 包中导入 Chart
+                组件对象：<br />
 
                 import {Chart} from 'highcharts-vue'<br />
                 然后，您需要在 Vue 实例配置中注册它，即在 components 部分中<br />
@@ -235,9 +200,8 @@
               <h3>配置</h3>
               <h3>1. 选项参数</h3>
               <p>
-                如果您已经完成上述任务之一（导入和注册组件），它允许您在应用程序中使用
-                Highcharts-Vue 组件，只需要添加 highcharts元素，而且必须通过它的
-                :options 参数传递图表配置对象<br />
+                如果您已经完成上述任务之一（导入和注册组件），它允许您在应用程序中使用 Highcharts-Vue 组件，只需要添加
+                highcharts元素，而且必须通过它的 :options 参数传递图表配置对象<br />
                 highcharts :options="chartOptions">highcharts<br />
                 例如：<br />
                 <small
@@ -254,9 +218,7 @@
             </el-collapse-item>
           </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="其他" name="third"
-          ><el-calendar v-model="value"> </el-calendar>
-        </el-tab-pane>
+        <el-tab-pane label="其他" name="third"><el-calendar v-model="value"> </el-calendar> </el-tab-pane>
         <el-tab-pane label="更多" name="fourth"
           ><el-card class="box-card">
             <div v-for="o in 4" :key="o" class="text item">

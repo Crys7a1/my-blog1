@@ -123,8 +123,7 @@ const goodsinfos = {
     {
       id: "MDN",
       info:
-        "MDN Web Docs 站点提供有关开放 Web 技术的信息" +
-        "包括用于 Web 站点和渐进式 Web 应用程序的 HTML、CSS 和 API ",
+        "MDN Web Docs 站点提供有关开放 Web 技术的信息" + "包括用于 Web 站点和渐进式 Web 应用程序的 HTML、CSS 和 API ",
       price: "前端学习",
       plusprice: "社区",
       imgsrc: "static/mdn.png",
@@ -151,8 +150,7 @@ const goodsinfos = {
     },
     {
       id: "JavaScriptInfo",
-      info:
-        "以最新的 JavaScript 标准为基准。通过简单但足够详细的内容，为你讲解从基础到高阶的 JavaScript 相关知识。",
+      info: "以最新的 JavaScript 标准为基准。通过简单但足够详细的内容，为你讲解从基础到高阶的 JavaScript 相关知识。",
       price: "前端学习",
       plusprice: "书籍",
       imgsrc: "static/javascriptInfo.png",

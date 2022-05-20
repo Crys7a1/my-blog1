@@ -156,13 +156,7 @@ img {
   margin: 50px;
   border: 1px #303846 solid;
   border-radius: 20px 20px;
-  background-image: linear-gradient(
-    to Bottom,
-    #1098ad 0%,
-    #1098ad 65%,
-    #1098ad,
-    white 0%
-  );
+  background-image: linear-gradient(to Bottom, #1098ad 0%, #1098ad 65%, #1098ad, white 0%);
 }
 
 .el-main {
@@ -173,15 +167,7 @@ img {
   /* background-image: linear-gradient(to Bottom,#eafbff 0%,
     #eafbff 50%,#5290f9,#5290f9 100%
     ); */
-  background-image: linear-gradient(
-    to Bottom,
-    #eafbff 0%,
-    #eafbff 25%,
-    #5290f9,
-    #5290f9 75%,
-    #eafbff,
-    #eafbff 100%
-  );
+  background-image: linear-gradient(to Bottom, #eafbff 0%, #eafbff 25%, #5290f9, #5290f9 75%, #eafbff, #eafbff 100%);
 }
 
 body > .el-container {

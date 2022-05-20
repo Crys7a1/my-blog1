@@ -1,15 +1,10 @@
 <template>
   <div id="app">
-    
-    <router-view/>
+    <router-view />
     <!-- <el-button plain>朴素按钮</el-button> -->
   </div>
 </template>
 
-<script>
+<script></script>
 
-</script>
-
-<style>
-
-</style>
+<style></style>

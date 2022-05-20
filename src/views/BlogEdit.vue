@@ -31,11 +31,7 @@
           </div> -->
           <h2>推荐网站</h2>
 
-          <el-descriptions
-            style="margin-top:100px"
-            v-for="item in goodsinfos"
-            v-bind:key="item.id"
-          >
+          <el-descriptions style="margin-top:100px" v-for="item in goodsinfos" v-bind:key="item.id">
             <el-descriptions-item label="🔵">
               <img :src="item.imgsrc" alt="" height="50" width="50" />
             </el-descriptions-item>
@@ -47,15 +43,11 @@
             <!-- <el-descriptions-item label="">{{
               item.price
             }}</el-descriptions-item> -->
-            <el-descriptions-item label="描述">{{
-              item.info
-            }}</el-descriptions-item>
+            <el-descriptions-item label="描述">{{ item.info }}</el-descriptions-item>
 
             <el-descriptions-item label="备注">
               <el-tag size="small">{{ item.plusprice }}</el-tag>
-              <el-tag size="small" style="margin-left:10px">{{
-                item.plusprice
-              }}</el-tag>
+              <el-tag size="small" style="margin-left:10px">{{ item.plusprice }}</el-tag>
             </el-descriptions-item>
           </el-descriptions>
         </div>

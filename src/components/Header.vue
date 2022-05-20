@@ -9,9 +9,15 @@
 
       <nav id="nav" :class="{ active: active1 }">
         <ul>
-          <li><router-link :to="{ name: 'Login' }">首页</router-link></li>
-          <li><router-link :to="{ name: 'BlogDetail' }">内容</router-link></li>
-          <li><router-link :to="{ name: 'BlogEdit' }">管理</router-link></li>
+          <li>
+            <router-link :to="{ name: 'Login' }">首页</router-link>
+          </li>
+          <li>
+            <router-link :to="{ name: 'BlogDetail' }">内容</router-link>
+          </li>
+          <li>
+            <router-link :to="{ name: 'BlogEdit' }">管理</router-link>
+          </li>
           <!-- <li><a href="">About</a></li> -->
         </ul>
 
@@ -21,9 +27,7 @@
         </button>
       </nav>
       <div class="git">
-        <a href="https://github.com/Crys7a1" target="_blank"
-          ><img id="github" src="/static/github.png" alt=""
-        /></a>
+        <a href="https://github.com/Crys7a1" target="_blank"><img id="github" src="/static/github.png" alt=""/></a>
       </div>
     </el-header>
   </div>
